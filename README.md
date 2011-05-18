@@ -1,6 +1,6 @@
 # poundie-wozzeck
 
-A Poundie plugin for integrating WOZZECK wit your Campfire
+A Poundie plugin for integrating WOZZECK wit your Campfire.
 
 ## USAGE
 

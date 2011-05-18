@@ -2,7 +2,8 @@ class PoundieWozzeck < Poundie::Plugin
   register :poundie_wozzeck
 
   prefix %r/poundie wozzeck\s+/ do |term|
-    speak "POUNDIE WOZZECK COMING SOON!"
+    response = `curl -d "melody[lyrics]=#{term}" http://wozzeck.me/melodies`
+    speak response.scan(/http:\/\/[^"]*/).first
   end
 end
 
